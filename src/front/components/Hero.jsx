@@ -9,12 +9,12 @@ export default function Hero() {
         backgroundImage: `url(${heroImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "80vh", // alto de la sección
+        minHeight: "80vh", 
         position: "relative",
         color: "white"
       }}
     >
-      {/* capa oscura encima para mejorar contraste */}
+      
       <div
         style={{
           position: "absolute",
@@ -22,7 +22,7 @@ export default function Hero() {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0,0,0,0.4)", // oscurece un poco el fondo
+          backgroundColor: "rgba(0,0,0,0.4)", 
           zIndex: 1
         }}
       ></div>
@@ -36,12 +36,12 @@ export default function Hero() {
   Bienvenid@ a Stamping Dimarc
 </h1>
 
-         <p className="lead mt-3" style={{ fontFamily: "Sansita Swashed, cursive", maxWidth: "700px", margin: "0 auto" }}>
+         <p className="lead mt-3" style={{ fontFamily: "Sansita Swashed, cursive", maxWidth: "495px", margin: "0 auto" }}>
     Aquí creemos en marcas con esencia, en detalles que hablan, y en sellos que reflejan lo que eres.
   </p>
         <div className="d-flex gap-2 justify-content-center">
         
-          <Link to="/products" className="btn btn-outline-light btn-lg">Ver catálogo</Link>
+          <Link to="/products" className="btn btn-outline-light btn-lg mt-5">Ver catálogo</Link>
         </div>
       </div>
     </section>
