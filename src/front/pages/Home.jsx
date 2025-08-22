@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import HeroCTA from "../components/HeroCTA";
 import Card from "../components/KitCard";
 
+import ClosingBanner from "../components/ClosingBanner";
 
 export const Home = () => {
   return (
@@ -20,6 +21,7 @@ export const Home = () => {
       <section className="container my-5 py-4">
         <Card/>
       </section>
+      <ClosingBanner />
     </>
   );
 };
