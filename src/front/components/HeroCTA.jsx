@@ -92,11 +92,3 @@ export default function HeroCTA() {
                 >
                   Explora más en Instagram
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}

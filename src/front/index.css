@@ -1,0 +1,86 @@
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f9e7; /* Fondo general */
+}
+
+/* Tarjeta de la frase */
+.quote-card {
+  background: #ffffffee;
+  border-radius: 20px;
+  padding: 50px 36px 40px; 
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
+  position: relative;
+  font-size: 1.4rem;
+}
+
+/* Círculo del logo */
+.logo-badge {
+  position: absolute;
+  left: 50%;
+  top: -52px;                 
+  transform: translateX(-50%);
+  width: 130px;              
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  display: grid;
+  place-items: center;
+  border: 3px solid #907ab6;
+}
+.logo-badge img {
+  width: 85px;                
+  height: 85px;
+  object-fit: contain;
+}
+
+/* Texto "Thank You!" */
+.quote-card .thanks {
+  font-size: 1.8rem;    
+  margin-top: 16px;     
+  color: #907ab6;       
+  font-family: "Pacifico", cursive;  
+  padding-top: 12px;
+  border-top: 2px solid #907ab6;  
+  display: block;        
+  width: 80%;           
+  margin: 0 auto;       
+  text-align: center;
+}
+
+/* Panel de botones (CTA) */
+.cta-panel {
+  background: #d0c0de;
+  border-radius: 22px;
+  padding: 28px 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.14);
+  backdrop-filter: blur(2px);
+  max-width: 380px;   
+  margin: 0 auto;     
+}
+
+/* Botones ovalados */
+.btn-oval {
+  display: block;
+  text-decoration: none !important;
+  background: #fff;
+  color: #907ab6 !important;
+  border-radius: 9999px;
+  padding: 14px 18px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,.10);
+  font-size: large;
+  font-weight: bold;
+}
+.btn-oval:hover,
+.btn-oval:focus {
+  background: #907ab6;
+  color: #fff !important;
+  border-color: #907ab6;
+  box-shadow: 0 8px 22px rgba(144,122,182,.35);
+  transform: translateY(-2px);
+}
