@@ -33,14 +33,14 @@ const ClosingBanner = () => {
                     >
                         <div
                             className="rounded-circle bg-white p-1 d-flex align-items-center justify-content-center"
-                            style={{ width: "8rem", height: "8rem", overflow: "visible", border: "8px solid #f5f9e7" }}
+                            style={{ width: "10rem", height: "10rem", overflow: "visible", border: "8px solid #f5f9e7" }}
                         >
                             <img
                                 src={Logo}
                                 alt="Logo"
                                 style={{
-                                    width: "100%",
-                                    height: "100%",
+                                    width: "60%",
+                                    height: "60%",
                                 }}
                             />
                         </div>
@@ -49,8 +49,8 @@ const ClosingBanner = () => {
                     {/* Card Content */}
                     <div className="mt-5">
                         <h2
-                            className="fs-4 fw-medium mb-2"
-                            style={{ color: "#6d28d9", lineHeight: "1.5" }}
+                            className="fs-4 fw-bold mb-2"
+                            style={{ color: "#907ab6", lineHeight: "1.5" }}
                         >
                             El empaque es más que papel. Más que tinta.<br />
                             Es tu historia, tu huella, tu esencia.
@@ -58,8 +58,8 @@ const ClosingBanner = () => {
                     </div>
                 </div>
                 <div
-                    className="fs-3 fst-italic text-center mt-4"
-                    style={{ fontFamily: "serif", color: "#6d28d9" }}
+                    className="fs-3  text-center mt-4"
+                    style={{ fontFamily: "pacifico", color: "#907ab6" }}
                 >
                     ¡Gracias por confiar en mi marca!
                 </div>
