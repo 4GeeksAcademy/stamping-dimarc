@@ -1,102 +1,55 @@
 import { Link } from "react-router-dom";
-import heroBg from "../assets/img/hero-call-to-action.png";
-import monograma from "../assets/img/monograma-stamping.png";
 
-export default function HeroCTA() {
+export const Navbar = () => {
   return (
-    // Sección con imagen de fondo y CTA
-    <section
-      className="d-flex align-items-center py-5"
-      style={{
-        backgroundImage: `url(${heroBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "90vh",
-        position: "relative",
-        color: "white",
-      }}
-    >
-      {/* Capa oscura sobre el fondo */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundColor: "rgba(0,0,0,.35)",
-          zIndex: 1,
-        }}
-      />
+    <nav className="navbar sticky-top" style={{ backgroundColor: "#907ab6" }}>
+      <div className="container d-flex justify-content-between align-items-center">
 
-      <div className="container position-relative" style={{ zIndex: 2 }}>
-        <div className="row g-4 align-items-center">
-          
-          {/* Columna izquierda con frase e insignia */}
-          <div className="col-lg-6">
-            <div className="quote-card text-center">
-              <div className="logo-badge">
-                <img 
-                  src={monograma} 
-                  alt="Monograma Stamping" 
-                  style={{ width: 64, height: 64, objectFit: "contain" }} 
-                />
-              </div>
+        {/* Logo */}
+        <Link to="/">
+          <img
+            src="https://raw.githubusercontent.com/4GeeksAcademy/stamping-dimarc/refs/heads/main/src/front/assets/img/logo-horizontal-stamping.png"
+            alt="Stamping Dimarc"
+            style={{ height: "50px" }}
+          />
+        </Link>
 
-              {/* Texto principal */}
-              <p 
-                className="fw-bold" 
-                style={{ color: "#907ab6", marginTop: "24px", marginBottom: "16px" }}
-              >
-                Detrás de cada sello hay una historia,
-                y detrás de cada historia, un soñador
-                que no se rindió.
-              </p>
-
-              {/* Texto decorativo */}
-              <p className="thanks">Thank You!</p>
-            </div>
-          </div>
-
-          {/* Columna derecha con botones de acción */}
-          <div className="col-lg-6">
-            <div className="cta-panel">
-              <div className="d-grid gap-3">
-                <a
-                  href="https://wa.me/50762971297"
-                  target="_blank" rel="noopener noreferrer"
-                  className="btn-oval text-center"
-                >
-                  Haz tu pedido fácil y rápido por WhatsApp
-                </a>
-
-                <Link to="/guia" className="btn-oval text-center">
-                  Guía rápida para saber qué sello necesitas
-                </Link>
-
-                <Link to="/products" className="btn-oval text-center">
-                  Ver catálogo
-                </Link>
-
-                <a 
-                  href="https://tiktok.com/@stampingdimarc"
-                  target="_blank" rel="noopener noreferrer"
-                  className="btn-oval text-center"
-                >
-                  Sígueme en TikTok
-                </a>
-
-                <a 
-                  href="https://instagram.com/stampingdimarc"
-                  target="_blank" rel="noopener noreferrer"
-                  className="btn-oval text-center"
-                >
-                  Explora más en Instagram
-                </a>
-              </div>
-            </div>
-          </div>
+        {/* Links */}
+        <div className="d-flex gap-3">
+          <Link to="/" className="text-white text-decoration-none">
+            Inicio
+          </Link>
+          <Link to="/products" className="text-white text-decoration-none">
+            Catálogo
+          </Link>
+          <Link to="/contact" className="text-white text-decoration-none">
+            Contacto
+          </Link>
+          <Link to="/sellos" className="text-white text-decoration-none">
+            Sellos
+          </Link>
+          <Link to="/tintas" className="text-white text-decoration-none">
+            Tintas
+          </Link>
         </div>
+
+        {/* Buscador */}
+        <form className="d-flex" role="search">
+          <input
+            className="form-control"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Search"
+          />
+          <button
+            className="btn btn-light ms-2"
+            type="submit"
+            style={{ backgroundColor: "#907ab6", color: "white" }}
+          >
+            🔍
+          </button>
+        </form>
       </div>
-    </section>
+    </nav>
   );
-}
+};

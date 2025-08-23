@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import HeroCTA from "../components/HeroCTA";
 import Card from "../components/KitCard";
 
+
 export const Home = () => {
   return (
     <>

@@ -4,7 +4,7 @@ import monograma from "../assets/img/monograma-stamping.png";
 
 export default function HeroCTA() {
   return (
-    // Sección con imagen de fondo y CTA
+    /* Sección con imagen de fondo y CTA */
     <section
       className="d-flex align-items-center py-5"
       style={{
@@ -30,21 +30,20 @@ export default function HeroCTA() {
 
       <div className="container position-relative" style={{ zIndex: 2 }}>
         <div className="row g-4 align-items-center">
-          
           {/* Columna izquierda con frase e insignia */}
           <div className="col-lg-6">
             <div className="quote-card text-center">
               <div className="logo-badge">
-                <img 
-                  src={monograma} 
-                  alt="Monograma Stamping" 
-                  style={{ width: 64, height: 64, objectFit: "contain" }} 
+                <img
+                  src={monograma}
+                  alt="Monograma Stamping"
+                  style={{ width: 64, height: 64, objectFit: "contain" }}
                 />
               </div>
 
               {/* Texto principal */}
-              <p 
-                className="fw-bold" 
+              <p
+                className="fw-bold"
                 style={{ color: "#907ab6", marginTop: "24px", marginBottom: "16px" }}
               >
                 Detrás de cada sello hay una historia,
@@ -63,7 +62,8 @@ export default function HeroCTA() {
               <div className="d-grid gap-3">
                 <a
                   href="https://wa.me/50762971297"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-oval text-center"
                 >
                   Haz tu pedido fácil y rápido por WhatsApp
@@ -77,18 +77,28 @@ export default function HeroCTA() {
                   Ver catálogo
                 </Link>
 
-                <a 
+                <a
                   href="https://tiktok.com/@stampingdimarc"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-oval text-center"
                 >
                   Sígueme en TikTok
                 </a>
 
-                <a 
+                <a
                   href="https://instagram.com/stampingdimarc"
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-oval text-center"
                 >
                   Explora más en Instagram
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
