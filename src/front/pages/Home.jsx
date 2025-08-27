@@ -21,7 +21,8 @@ export const Home = () => {
       <section className="container my-5 py-4">
         <Card/>
       </section>
-      <ClosingBanner />
+    
+      <ClosingBanner/>
     </>
   );
 };
