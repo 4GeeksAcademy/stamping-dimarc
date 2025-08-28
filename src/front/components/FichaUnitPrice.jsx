@@ -3,42 +3,42 @@ import { Button, Badge } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 // imágenes
-import imgKitInicial from "../assets/img/kit-inicial.jpg";
-import imgMiniKit from "../assets/img/mini-kit-inicial.jpg";
-import imgEmprendedor from "../assets/img/mini-kit-emprendedor.jpg";
-import imgMiniDoble from "../assets/img/kit-mini-doble.jpg";
+import imgLogoGrande from "../assets/img/logo-grande.jpg";
+import imgLogoMediano from "../assets/img/logo-mediano.jpg";
+import imgLogoMiniSello from "../assets/img/logo-minisello.jpg";
+import imgMiniDoblesIconos from "../assets/img/minidobles-iconos.jpg";
 
 // catálogo de KITS
 const productos = {
-  "kit-inicial": {
-    slug: "kit-inicial",
-    nombre: "Kit inicial",
+  "logo-grande": {
+    slug: "logo-grande",
+    nombre: "logo grande",
     resumen: "Ideal para negocios de ropa, calzado o productos con empaque mediano o grande.",
     incluye: [
       "1 sello de 10x10cm con logo principal",
       "1 sello de 2x6cm con Instagram y WhatsApp",
       "(No incluye tinta)"
     ],
-    imagen: imgKitInicial,
+    imagen: imgLogoGrande,
     destacado: true,
     precio: 45
   },
-  "mini-kit-inicial": {
-    slug: "mini-kit-inicial",
-    nombre: "Mini kit inicial",
+  "logo-mediano": {
+    slug: "logo-mediano",
+    nombre: "logo mediano",
     resumen: "Ideal para marcas de velas artesanales o jabones, joyería y bisutería, reposterías.",
     incluye: [
       "1 sello de 6x5cm con logo principal",
       "1 sello de 2x6cm con Instagram y WhatsApp",
       "(No incluye tinta)"
     ],
-    imagen: imgMiniKit,
+    imagen: imgLogoMediano,
     destacado: false,
     precio: 30
   },
-  "mini-kit-emprendedor": {
-    slug: "kit-emprendedor",
-    nombre: "Mini kit emprendedor",
+  "logo-minisello": {
+    slug: "logo-minisello",
+    nombre: "logo mini sello",
     resumen: "Ideal para marcas de velas artesanales o jabones, joyería y bisutería, reposterías.",
     incluye: [
       "4 mini sellos (3x4cm o 2x6cm, según diseño)",
@@ -46,19 +46,19 @@ const productos = {
       "Datos de Instagram y WhatsApp (1x4cm)",
       "(No incluye tinta)"
     ],
-    imagen: imgEmprendedor,
+    imagen: imgLogoMiniSello,
     destacado: false,
     precio: 32
   },
-  "kit-mini-doble": {
-    slug: "kit-mini-doble",
-    nombre: "Kit mini doble",
+  "minidobles-iconos": {
+    slug: "minidobles-iconos",
+    nombre: "mini dobles iconos",
     resumen: "Ideal para decorar bolsas, cajas y etiquetas. Tamaño especial para iconos sencillos.",
     incluye: [
       "8 diseños medida 2.5cm x 2.5cm solo para iconos sencillos",
       "(No incluye tinta)"
     ],
-    imagen: imgMiniDoble,
+    imagen: imgMiniDoblesIconos,
     destacado: false,
     precio: 22
   }
