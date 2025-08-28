@@ -23,6 +23,7 @@ export const Home = () => {
       </section>
 
       <UnitPriceCard />
+      
 
       <ClosingBanner />
     </>
