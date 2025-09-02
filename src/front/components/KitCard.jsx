@@ -18,7 +18,7 @@ export default function BasicCard() {
 
       {/* Grilla */}
       <div className="row g-4 justify-content-center">
-        {/* 1) Kit inicial con Link */}
+        {/* 1) Kit inicial */}
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
           <Link to="/producto/kit-inicial" style={{ textDecoration: "none", color: "inherit" }}>
             <Card className="h-100">
@@ -48,6 +48,7 @@ export default function BasicCard() {
 
         {/* 2) Mini Kit */}
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+          <Link to="/producto/mini-kit-inicial" style={{ textDecoration: "none", color: "inherit" }}>
           <Card className="h-100">
             <Card.Img variant="top" src={img2} alt="Mini kit inicial" style={{ height: "320px", objectFit: "cover" }} />
             <Card.Body className="d-flex flex-column text-center" style={{ minHeight: "220px" }}>
@@ -61,10 +62,12 @@ export default function BasicCard() {
               </Button>
             </Card.Body>
           </Card>
+          </Link>
         </div>
 
         {/* 3) Kit Emprendedor */}
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+          <Link to="/producto/mini-kit-emprendedor" style={{ textDecoration: "none", color: "inherit" }}>
           <Card className="h-100">
             <Card.Img variant="top" src={img3} alt="Kit Emprendedor" style={{ height: "320px", objectFit: "cover" }} />
             <Card.Body className="d-flex flex-column text-center" style={{ minHeight: "220px" }}>
@@ -78,10 +81,12 @@ export default function BasicCard() {
               </Button>
             </Card.Body>
           </Card>
+          </Link>
         </div>
 
         {/* 4) Kit Mini Doble */}
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+          <Link to="/producto/kit-mini-doble" style={{ textDecoration: "none", color: "inherit" }}>
           <Card className="h-100">
             <Card.Img variant="top" src={img4} alt="Kit Mini Doble" style={{ height: "320px", objectFit: "cover" }} />
             <Card.Body className="d-flex flex-column text-center" style={{ minHeight: "220px" }}>
@@ -95,6 +100,7 @@ export default function BasicCard() {
               </Button>
             </Card.Body>
           </Card>
+          </Link>
         </div>
       </div>
     </section>

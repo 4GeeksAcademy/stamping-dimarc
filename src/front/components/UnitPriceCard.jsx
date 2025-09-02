@@ -1,4 +1,5 @@
 import { Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import img1 from "../assets/img/logo-grande.jpg";
 import img2 from "../assets/img/logo-mediano.jpg";
 import img3 from "../assets/img/logo-minisello.jpg";
@@ -15,6 +16,7 @@ export default function BasicCard() {
   </p>
       <div className="row g-4 justify-content-center">
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+          <Link to="/individual/logo-grande" style={{ textDecoration: "none", color: "inherit" }}>
           <Card className="h-100">
             <Card.Img variant="top" src={img1} alt="Kit inicial"
               style={{ height: "320px", objectFit: "cover" }} />
@@ -33,9 +35,11 @@ export default function BasicCard() {
               </Button>
             </Card.Body>
           </Card>
+          </Link>
         </div>
 
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+          <Link to="/individual/logo-mediano" style={{ textDecoration: "none", color: "inherit" }}>
           <Card className="h-100">
             <Card.Img variant="top" src={img2} alt="Mini kit inicial"
               style={{ height: "320px", objectFit: "cover" }} />
@@ -51,9 +55,11 @@ export default function BasicCard() {
               </Button>
             </Card.Body>
           </Card>
+          </Link>
         </div>
 
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+          <Link to="/individual/logo-minisello" style={{ textDecoration: "none", color: "inherit" }}>
           <Card className="h-100">
             <Card.Img variant="top" src={img3} alt="Kit Emprendedor"
               style={{ height: "320px", objectFit: "cover" }} />
@@ -68,9 +74,11 @@ export default function BasicCard() {
               </Button>
             </Card.Body>
           </Card>
+          </Link>
         </div>
 
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+           <Link to="/individual/minidobles-iconos" style={{ textDecoration: "none", color: "inherit" }}>
           <Card className="h-100">
             <Card.Img variant="top" src={img4} alt="Kit Mini Doble"
               style={{ height: "320px", objectFit: "cover" }} />
@@ -86,6 +94,7 @@ export default function BasicCard() {
               </Button>
             </Card.Body>
           </Card>
+          </Link>
         </div>
       </div>
     </section>

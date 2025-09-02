@@ -10,6 +10,8 @@ import { Home } from "./pages/Home";
 import { Single } from "./pages/Single";
 import { Demo } from "./pages/Demo";
 import FichaKitCard from "./components/FichaKitCard";
+import FichaUnitPrice from "./components/FichaUnitPrice";
+
 
 
 export const router = createBrowserRouter(
@@ -28,7 +30,8 @@ export const router = createBrowserRouter(
         <Route path="/single/:theId" element={ <Single />} />  {/* Dynamic route for single items */}
         <Route path="/demo" element={<Demo />} />
         {/* Nueva ruta para la ficha del Kit Inicial */}
-        <Route path="/producto/kit-inicial" element={<FichaKitCard />} />
+       <Route path="/producto/:id" element={<FichaKitCard />} /> 
+       <Route path="/individual/:id" element={<FichaUnitPrice />} /> 
       </Route>
     )
 );
