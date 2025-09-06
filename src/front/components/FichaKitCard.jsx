@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Badge } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-
+import CarruselFichaKit from "./CarruselFichaKit.jsx";
 // imágenes
 import imgKitInicial from "../assets/img/kit-inicial.jpg";
 import imgMiniKit from "../assets/img/mini-kit-inicial.jpg";
@@ -20,9 +20,14 @@ const productos = {
       "(No incluye tinta)"
     ],
     imagen: imgKitInicial,
+    imagenes: [
+      "https://res.cloudinary.com/dakvux10n/image/upload/v1756522645/20250805_154150_qrqam7.jpg",
+      "https://res.cloudinary.com/dakvux10n/image/upload/v1756522647/20250805_154242_h7v6bd.jpg",
+    ],
     destacado: true,
     precio: 45
   },
+
   "mini-kit-inicial": {
     slug: "mini-kit-inicial",
     nombre: "Mini kit inicial",
@@ -37,7 +42,7 @@ const productos = {
     precio: 30
   },
   "mini-kit-emprendedor": {
-    slug: "kit-emprendedor",
+    slug: "mini-kit-emprendedor",
     nombre: "Mini kit emprendedor",
     resumen: "Ideal para marcas de velas artesanales o jabones, joyería y bisutería, reposterías.",
     incluye: [
@@ -82,13 +87,17 @@ export default function FichaKitCard() {
   const colorTexto = "#756197";
   const colorAccion = "#907ab6";
 
+  // 👇 Aquí guardamos la imagen principal (arranca con la primera)
+  const [mainImage, setMainImage] = useState(p.imagen);
+
   return (
     <section className="container my-5">
       <div className="row g-4 align-items-start">
         <div className="col-12 col-lg-6">
+          {/* Imagen principal */}
           <div style={{ borderRadius: 16, overflow: "hidden", boxShadow: "0 6px 24px rgba(0,0,0,0.08)" }}>
             <img
-              src={p.imagen}
+              src={mainImage}
               alt={p.nombre}
               style={{
                 width: "100%",
@@ -99,6 +108,15 @@ export default function FichaKitCard() {
               }}
             />
           </div>
+
+          {/* Miniaturas */}
+          {p.imagenes && p.imagenes.length > 0 && (
+            <CarruselFichaKit
+              imagenes={[p.imagen, ...p.imagenes]} // principal + extras
+              altBase={p.nombre}
+              onSelect={setMainImage}             // 👈 cambia la principal
+            />
+          )}
         </div>
 
         <div className="col-12 col-lg-6">
