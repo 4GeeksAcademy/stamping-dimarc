@@ -87,7 +87,7 @@ export default function FichaKitCard() {
   const colorTexto = "#756197";
   const colorAccion = "#907ab6";
 
-  // 👇 Aquí guardamos la imagen principal (arranca con la primera)
+
   const [mainImage, setMainImage] = useState(p.imagen);
 
   return (
@@ -109,14 +109,7 @@ export default function FichaKitCard() {
             />
           </div>
 
-          {/* Miniaturas */}
-          {p.imagenes && p.imagenes.length > 0 && (
-            <CarruselFichaKit
-              imagenes={[p.imagen, ...p.imagenes]} // principal + extras
-              altBase={p.nombre}
-              onSelect={setMainImage}             // 👈 cambia la principal
-            />
-          )}
+
         </div>
 
         <div className="col-12 col-lg-6">
@@ -127,39 +120,74 @@ export default function FichaKitCard() {
               </Badge>
             )}
             <span style={{ fontSize: "0.95rem", color: "#999" }}>Código: {p.slug}</span>
+
           </div>
 
-          <h1 style={{ color: colorTexto, marginBottom: 12 }}>{p.nombre}</h1>
-          <p style={{ color: colorTexto, marginBottom: 18 }}>{p.resumen}</p>
+          <h1 style={{ color: colorTexto, fontFamily: 'pacifico', marginBottom: 12 }}>{p.nombre}</h1>
+          <p style={{ color: colorTexto, fontSize: "1.6rem", marginBottom: 18 }}>{p.resumen}</p>
 
           {p.incluye?.length > 0 && (
             <>
-              <h6 style={{ color: colorTexto, opacity: 0.9 }}>Incluye</h6>
-              <ul style={{ color: colorTexto, marginBottom: 18 }}>
+              <h1 style={{ fontFamily: 'pacifico', color: colorTexto, opacity: 0.9 }}>Incluye</h1>
+              <ul style={{ color: colorTexto, fontSize: "1.6rem", marginBottom: 30 }}>
                 {p.incluye.map((i, idx) => <li key={idx}>{i}</li>)}
               </ul>
             </>
           )}
-
-          <p style={{ fontSize: "1.6rem", fontWeight: "bold", color: colorTexto, margin: "8px 0 16px" }}>
+          <p style={{ fontSize: "2.5rem", fontWeight: "bold", color: colorTexto, margin: "8px 0 16px" }}>
             ${p.precio.toFixed(2)}
           </p>
 
           <div className="d-flex gap-3">
             <Button
-              style={{ backgroundColor: colorAccion, borderColor: colorAccion }}
+              style={{
+                backgroundColor: colorAccion,
+                borderColor: colorAccion,
+                fontSize: "1.9rem",
+                padding: "12px 28px",
+                borderRadius: "8px"
+              }}
               onClick={() => {
                 const msg = `Hola, me interesa el ${p.nombre} (${p.slug})`;
-                window.open(`https://wa.me/50762971297?text=${encodeURIComponent(msg)}`, "_blank", "noopener,noreferrer");
+                window.open(
+                  `https://wa.me/50762971297?text=${encodeURIComponent(msg)}`,
+                  "_blank",
+                  "noopener,noreferrer"
+                );
               }}
             >
-              Pídelo aquí
+              Lo necesito en mi vida 😍
             </Button>
 
-            <Button variant="outline-secondary" onClick={() => window.history.back()}>
-              Volver
+
+            <Button
+              style={{
+                fontSize: "1.2rem", backgroundColor: "#b9c174", 
+                borderColor: "#b9c174",     
+                color: "#fff",
+                padding: "12px 28px",
+                borderRadius: "8px",
+                whiteSpace: "nowrap",
+                minWidth: "180px",
+                textAlign: "center"
+              }}
+              onClick={() => window.history.back()}
+            >
+              Quiero ver más!!!
             </Button>
+
+
           </div>
+          {p.imagenes && p.imagenes.length > 0 && (
+            <div className="mt-5 d-flex justify-content-lg-end justify-content-center">
+              <CarruselFichaKit
+                imagenes={[p.imagen, ...p.imagenes]}
+                altBase={p.nombre}
+                onSelect={setMainImage}
+              />
+            </div>
+          )}
+
         </div>
       </div>
     </section>
