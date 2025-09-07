@@ -14,16 +14,14 @@ export const Home = () => {
       <div className="my-5 py-5"></div>
 
       <HeroCTA />
-
-
-      <div className="my-5 py-5"></div>
-
-      <section className="container my-5 py-4">
+      <section id="kits" className="container my-5 py-4">
         <Card />
       </section>
 
-      <UnitPriceCard />
-      
+      <section id="individuales" className="container my-5 py-4">
+        <UnitPriceCard />
+      </section>
+
 
       <ClosingBanner />
     </>

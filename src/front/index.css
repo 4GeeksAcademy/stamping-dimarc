@@ -84,3 +84,21 @@ body {
   box-shadow: 0 8px 22px rgba(144,122,182,.35);
   transform: translateY(-2px);
 }
+
+.dropdown-menu .dropdown-item {
+  color: #907ab6 !important;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0e8fa;
+  color: #907ab6 !important;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .dropdown-toggle {
+  color: #fff !important;     
+  opacity: 1 !important;      
+
