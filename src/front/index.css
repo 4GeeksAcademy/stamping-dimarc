@@ -101,4 +101,43 @@ body {
 .navbar-dark .navbar-nav .dropdown-toggle {
   color: #fff !important;     
   opacity: 1 !important;      
+}
 
+.form-control::placeholder {
+  color: #907ab6; 
+  opacity: 1;     
+}
+
+.wa-widget{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1100;
+}
+
+.wa-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.wa-btn i{
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25d366; color: #fff; font-size: 28px;
+  display: inline-flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.wa-bubble{
+  background: #907ab6;
+  color: #fff;    
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  white-space: nowrap;
+  position: relative;;
+}
+
+@media (max-width: 576px){ .wa-bubble{ display:none; } }

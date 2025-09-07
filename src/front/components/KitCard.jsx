@@ -12,9 +12,9 @@ export default function BasicCard() {
       <h2 className="text-start mb-2" style={{ fontFamily: "'Pacifico', cursive", color: "#756197" }}>
         Kit de Sellos
       </h2>
-      <p className="text-start mb-4" style={{ color: "#907ab6" }}>
+      <h6 className="text-start mb-4" style={{ color: "#907ab6" }}>
         Todo lo que necesitas en un solo paquete
-      </p>
+      </h6>
 
       {/* Grilla */}
       <div className="row g-4 justify-content-center">
