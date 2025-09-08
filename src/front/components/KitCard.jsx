@@ -5,7 +5,7 @@ import img2 from "../assets/img/mini-kit-inicial.jpg";
 import img3 from "../assets/img/mini-kit-emprendedor.jpg";
 import img4 from "../assets/img/kit-mini-doble.jpg";
 
-export default function BasicCard() {
+export default function KitCard() {
   return (
     <section className="container my-5">
       {/* Encabezado de sección: FUERA del row */}

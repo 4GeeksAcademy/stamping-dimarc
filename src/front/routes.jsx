@@ -12,7 +12,7 @@ import { Single } from "./pages/Single";
 import { Demo } from "./pages/Demo";
 import FichaKitCard from "./components/FichaKitCard";
 import FichaUnitPrice from "./components/FichaUnitPrice";
-
+import Emprendedores from "./pages/Emprendedores.jsx";
 
 
 export const router = createBrowserRouter(
@@ -34,6 +34,8 @@ export const router = createBrowserRouter(
         {/* Nueva ruta para la ficha del Kit Inicial */}
        <Route path="/producto/:id" element={<FichaKitCard />} /> 
        <Route path="/individual/:id" element={<FichaUnitPrice />} /> 
+
+      <Route path="emprendedores/" element={<Emprendedores/>} />
       </Route>
     )
 );

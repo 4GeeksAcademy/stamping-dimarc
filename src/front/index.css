@@ -130,7 +130,7 @@ body {
 }
 
 .wa-bubble{
-  background: #907ab6;
+  background: #756197;
   color: #fff;    
   font-weight: 600;
   padding: 8px 12px;
@@ -141,3 +141,17 @@ body {
 }
 
 @media (max-width: 576px){ .wa-bubble{ display:none; } }
+
+h1 {
+  margin-top: 2rem;
+}
+
+:root { --nav-h: 72px; } 
+body { padding-top: var(--nav-h); }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; }
+
+.hero {
+  margin-top: -72px; 
+}
+
+

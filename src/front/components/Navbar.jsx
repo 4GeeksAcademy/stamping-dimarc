@@ -35,8 +35,8 @@ export const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item mx-0.5 fw-semibold" style={{ color: "white", cursor: "pointer" }}>
               <NavDropdown title="Sellos" id="sellos-dropdown">
-                <NavDropdown.Item as={Link} to="/kits">Emprendedores</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/individuales">Docentes</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/emprendedores">Emprendedores</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/docentes">Docentes</NavDropdown.Item>
 
                  {/* Estas son secciones dentro del Home */}
                 <NavDropdown.Item href="/#kits">Kits de Sellos</NavDropdown.Item>

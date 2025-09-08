@@ -1,7 +1,7 @@
 
 export const Footer = () => (
 	<footer className="mt-auto" style={{
-		backgroundColor: '#907ab6',
+		backgroundColor: '#b5a3ce',
 		color: 'white',
 		fontFamily: '"Cormorant Garamond", serif'
 	}}>
