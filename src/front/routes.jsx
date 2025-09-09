@@ -13,6 +13,7 @@ import { Demo } from "./pages/Demo";
 import FichaKitCard from "./components/FichaKitCard";
 import FichaUnitPrice from "./components/FichaUnitPrice";
 import Emprendedores from "./pages/Emprendedores.jsx";
+import Tintas from "./pages/Tintas.jsx"; 
 
 
 export const router = createBrowserRouter(
@@ -36,6 +37,7 @@ export const router = createBrowserRouter(
        <Route path="/individual/:id" element={<FichaUnitPrice />} /> 
 
       <Route path="emprendedores/" element={<Emprendedores/>} />
+      <Route path="tintas/" element={<Tintas/>} />
       </Route>
     )
 );
