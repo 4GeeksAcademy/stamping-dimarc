@@ -31,7 +31,7 @@ export default function Tintas() {
       {/* Contenido principal */}
       <div className="container text-center" style={{ position: "relative", zIndex: 2 }}>
 
-        {/* Logo de las tintas desde Cloudinary */}
+        {/* Isotipo de las tintas */}
         <img
           src="https://res.cloudinary.com/dakvux10n/image/upload/v1757375781/Recurso_1ldpi_knvhfs.png"
           alt="Logo Tintas Dimarc"
@@ -45,7 +45,7 @@ export default function Tintas() {
         >
           Próximamente
         </h1>
-git add 
+
         {/* Subtítulo con fuente Sansita */}
         <p
           className="lead mt-3"
