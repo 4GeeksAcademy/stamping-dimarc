@@ -27,7 +27,7 @@ export const Navbar = () => {
               <Link to="/tintas" className="nav-link text-white fw-semibold ">Tintas</Link>
             </li>
             <li className="nav-item mx-2">
-              <Link to="/tintas" className="nav-link text-white fw-semibold">Contacto</Link>
+              <Link to="/contacto" className="nav-link text-white fw-semibold">Contacto</Link>
             </li>
           </ul>
 
@@ -49,9 +49,9 @@ export const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item mx-3 fw-semibold" style={{ color: "white", cursor: "pointer" }}>
               <NavDropdown title="Preguntas Frecuentes" id="preguntas frecuentes-dropdown">
-                <NavDropdown.Item as={Link} to="/kits">Antes de comprar</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/individuales">Después de comprar</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/individuales">Entregas y Envíos</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/antesdecomprar">Antes de comprar</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/despuesdecomprar">Después de comprar</NavDropdown.Item>
+                <NavDropdown.Item as={Link}  to="/entregasyenvios">Entregas y Envíos</NavDropdown.Item>
               </NavDropdown>
             </li>
           </ul>

@@ -9,8 +9,9 @@ export const Layout = () => {
     return (
         <ScrollToTop>
             <Navbar />
+            <main>
             <Outlet />
-            <Footer />
+           
             <div className="wa-widget">
             <a href="https://api.whatsapp.com/send?phone=50762971297"
                 target="_blank"
@@ -22,6 +23,8 @@ export const Layout = () => {
             <span className="wa-bubble">¿Tienes dudas?</span>
             </a>
             </div>
+            </main>
+            <Footer />
         </ScrollToTop>
     )
 }

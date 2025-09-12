@@ -66,6 +66,143 @@ export default function AntesDeComprar() {
             </span>
           </Card.Body>
         </Card>
+
+        <h2 className="mt-5 mb-3" style={{ color: "#756197" }}>Asesoría de tamaños</h2>
+
+        <Row className="g-4">
+          <Col md={6} lg={3}>
+            <Card className="h-100 shadow-sm p-3 text-start">
+              <div className="mb-2" style={{ color: "#b9c174" }}>
+                <i className="fa-solid fa-ruler-combined fa-2x"></i>
+              </div>
+              <Card.Title style={{ color: "#756197" }}>Cómo medir tu logo</Card.Title>
+              <Card.Text className="small" style={{ color: "#756197" }}>
+                Coloca una regla sobre el ancho y alto de tu logo en pantalla o impreso. Anota esas medidas en cm. Si no puedes imprimir, mide directo en la pantalla con una regla física.
+              </Card.Text>
+            </Card>
+          </Col>
+
+          <Col md={6} lg={3}>
+            <Card className="h-100 shadow-sm p-3 text-start">
+              <div className="mb-2" style={{ color: "#b9c174" }}>
+                <i className="fa-solid fa-bag-shopping fa-2x"></i>
+              </div>
+              <Card.Title style={{ color: "#756197" }}>Tamaños recomendados</Card.Title>
+              <Card.Text as="ul" className="small text-start" style={{ color: "#756197" }}>
+                <li>Bolsa 30×26 cm: sello 10×10 cm</li>
+                <li>Bolsa 25×16 cm: sello 6×5 cm</li>
+                <li>Bolsa 15×12 cm: sello 3×4 cm o 2×6 cm</li>
+                <li>Mini decorativos: 2.5×2.5 cm</li>
+              </Card.Text>
+            </Card>
+          </Col>
+
+          <Col md={6} lg={3}>
+            <Card className="h-100 shadow-sm p-3 text-start">
+              <div className="mb-2" style={{ color: "#b9c174" }}>
+                <i className="fa-regular fa-square fa-2x"></i>
+              </div>
+              <Card.Title style={{ color: "#756197" }}>Cuadrado vs rectangular</Card.Title>
+              <Card.Text className="small" style={{ color: "#756197" }}>
+                Los sellos cuadrados se perciben más grandes y llenan mejor el espacio. Los rectangulares se ven más angostos aunque midan lo mismo.
+              </Card.Text>
+            </Card>
+          </Col>
+
+          <Col md={6} lg={3}>
+            <Card className="h-100 shadow-sm p-3 text-start">
+              <div className="mb-2" style={{ color: "#b9c174" }}>
+                <i className="fa-solid fa-wand-magic-sparkles fa-2x"></i>
+              </div>
+              <Card.Title style={{ color: "#756197" }}>Mejor versión del logo</Card.Title>
+              <Card.Text className="small" style={{ color: "#756197" }}>
+                Evita textos muy pequeños o detalles finos. Prefiere versiones simples y legibles con buen contraste para que el sello luzca nítido.
+              </Card.Text>
+            </Card>
+          </Col>
+        </Row>
+
+        <h3 className="mt-5 mb-3" style={{ color: "#756197" }}>Ejemplos por tamaño</h3>
+
+        <Row className="g-4">
+          <Col md={6}>
+            <Card className="h-100 shadow-sm text-center p-3">
+              <Card.Img
+                src=""
+                alt="Bolsa grande 30 × 26 cm"
+                style={{ height: 360, objectFit: "cover" }}
+              />
+              <Card.Body>
+                <Card.Title style={{ color: "#756197" }}>Bolsa grande 30 × 26 cm</Card.Title>
+                <Card.Text className="small" style={{ color: "#756197" }}>
+                  Sello recomendado 10×10 cm como logo principal.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={6}>
+            <Card className="h-100 shadow-sm text-center p-3">
+              <Card.Img
+                src=""
+                alt="Bolsa mediana 25 × 16 cm"
+                style={{ height: 360, objectFit: "cover" }}
+              />
+              <Card.Body>
+                <Card.Title style={{ color: "#756197" }}>Bolsa mediana 25 × 16 cm</Card.Title>
+                <Card.Text className="small" style={{ color: "#756197" }}>
+                  Sello recomendado 6×5 cm como logo principal.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
+        <Row className="g-4 mt-4">
+          <Col md={6}>
+            <Card className="h-100 shadow-sm text-center p-3">
+              <Card.Img
+                src=""
+                alt="Bolsa pequeña 15 × 12 cm"
+                style={{ height: 360, objectFit: "cover" }}
+              />
+              <Card.Body>
+                <Card.Title style={{ color: "#756197" }}>Bolsa pequeña 15 × 12 cm</Card.Title>
+                <Card.Text className="small" style={{ color: "#756197" }}>
+                  Sello recomendado 3×4 cm o 2×6 cm para datos/agradecimiento.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col md={6}>
+            <Card className="h-100 shadow-sm text-center p-3">
+              <Card.Img
+                src=""
+                alt="Mini decorativos 2.5 × 2.5 cm"
+                style={{ height: 360, objectFit: "cover" }}
+              />
+              <Card.Body>
+                <Card.Title style={{ color: "#756197" }}>Mini decorativos</Card.Title>
+                <Card.Text className="small" style={{ color: "#756197" }}>
+                  Sellos de 2.5×2.5 cm para íconos sencillos y patrones.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
+        <Card className="mt-4 border-0" style={{ background: "#b9c174" }}>
+          <Card.Body className="py-3">
+            <span className="fw-semi-bold" style={{ color: "#fff" }}>
+              Las medidas del sello son proporcionales al diseño y al espacio donde vayas a estampar
+            </span>
+          </Card.Body>
+        </Card>
+
+        <p className="mt-3 small" style={{ color: "#756197" }}>
+          ¿Tienes dudas? Envíame una foto de tu bolsa por WhatsApp y te recomiendo el tamaño ideal
+        </p>
       </Container>
     </section>
   );

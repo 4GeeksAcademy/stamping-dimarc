@@ -14,6 +14,11 @@ import FichaKitCard from "./components/FichaKitCard";
 import FichaUnitPrice from "./components/FichaUnitPrice";
 import Emprendedores from "./pages/Emprendedores.jsx";
 import Tintas from "./pages/Tintas.jsx"; 
+import Docentes from "./pages/Docentes.jsx";
+import AntesDeComprar from "./pages/AntesDeComprar.jsx";
+import DespuesDeComprar from "./pages/DespuesDeComprar.jsx";
+import EntregasyEnvios from "./pages/EntregasyEnvios.jsx";
+import Contacto from "./pages/Contacto.jsx";
 
 
 export const router = createBrowserRouter(
@@ -38,6 +43,11 @@ export const router = createBrowserRouter(
 
       <Route path="emprendedores/" element={<Emprendedores/>} />
       <Route path="tintas/" element={<Tintas/>} />
+      <Route path="docentes/" element={<Docentes/>} />
+      <Route path="antesdecomprar" element={<AntesDeComprar />} />
+      <Route path="despuesdecomprar" element={<DespuesDeComprar />} />
+      <Route path="entregasyenvios" element={<EntregasyEnvios />} />
+      <Route path="contacto" element={ <Contacto />} />
       </Route>
     )
 );
