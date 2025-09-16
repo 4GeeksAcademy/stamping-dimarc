@@ -116,7 +116,7 @@ h1, h2 {
 .wa-widget {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 120px;
   z-index: 1100;
 }
 
@@ -152,6 +152,8 @@ h1, h2 {
 }
 
 @media (max-width: 576px) {
+  .wa-widget { bottom: 90px; }
+  .gift-wrap { bottom: 140px; }
   .wa-bubble { display:none; }
 }
 
@@ -185,7 +187,7 @@ footer {
 
 .gift-wrap{
   position: fixed;
-  bottom: 100px;
+  bottom: 120px;
   z-index: 1100;
   display: flex;
   align-items: center;
@@ -200,10 +202,11 @@ footer {
   pointer-events: auto;
   width:50px; height: 50px; border-radius: 50%;
   border: 0; cursor: pointer;
-  background: #907ab6; color: #fff; font-size: 24px;
+  background:transparent;
   box-shadow: 0 8px 20px rgba(0,0,0,.25);
   display: inline-flex; align-items: center; justify-content: center;
   transition: transform .2s ease, box-shadow .2s ease;
+
 }
 .gift-btn:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.28); }
 
@@ -239,3 +242,17 @@ footer {
 @media (max-width: 576px){
   .gift-bubble{ max-width: 240px; }
 }
+
+.hero-zoom {
+  animation: heroZoom 20s ease-in-out infinite alternate;
+}
+
+
+ .hero-zoom {
+  animation: heroZoom 20s ease-in-out infinite alternate;
+  will-change: background-size;
+}
+
+@keyframes heroZoom {
+  0%   { background-size: 100%; }
+  100% { background-size: 110%; }

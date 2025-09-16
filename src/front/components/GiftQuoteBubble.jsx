@@ -45,7 +45,7 @@ export default function GiftQuoteBubble({ side = "left" }) {
   return (
     <div
       className={`gift-wrap ${side}`}
-      style={{ bottom: "20px", zIndex: 1200 }}
+      style={{ zIndex: 1200 }}
     >
       <button className="gift-btn" onClick={toggle} aria-label="Frase del día">
         <img

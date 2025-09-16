@@ -6,7 +6,7 @@ export default function HeroCTA() {
   return (
     /* Sección con imagen de fondo y CTA */
     <section
-      className="d-flex align-items-center py-5"
+      className="d-flex align-items-center py-5 hero-zoom"
       style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
@@ -69,13 +69,21 @@ export default function HeroCTA() {
                   Haz tu pedido fácil y rápido por WhatsApp
                 </a>
 
-                <Link to="/guia" className="btn-oval text-center">
+                <Link to="/antesdecomprar" className="btn-oval text-center">
                   Guía rápida para saber qué sello necesitas
                 </Link>
 
-                <Link to="/products" className="btn-oval text-center">
-                  Ver catálogo
-                </Link>
+
+
+                <a
+                  href="https://instagram.com/stampingdimarc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-oval text-center"
+                >
+                  Explora más en Instagram
+                </a>
+
 
                 <a
                   href="https://tiktok.com/@stampingdimarc"
@@ -86,14 +94,7 @@ export default function HeroCTA() {
                   Sígueme en TikTok
                 </a>
 
-                <a
-                  href="https://instagram.com/stampingdimarc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-oval text-center"
-                >
-                  Explora más en Instagram
-                </a>
+
               </div>
             </div>
           </div>
