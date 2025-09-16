@@ -1,7 +1,5 @@
-
-
 import React from "react";
-import BannerImage from "../assets/img/banner-final-stamping.jpg"
+import BannerImage from "../assets/img/banner-final-stamping.png"
 import Logo from "../assets/img/monograma-stamping.png"
 
 const ClosingBanner = () => {
@@ -9,7 +7,7 @@ const ClosingBanner = () => {
 
     return (
         <section
-            className=" bg-light d-flex align-items-center justify-content-center p-4"
+            className=" bg-light d-flex align-items-center-start justify-content-center  p-4"
             style={{
                 backgroundImage: `url(${BannerImage})`,
                 backgroundSize: "cover",
@@ -17,7 +15,7 @@ const ClosingBanner = () => {
                 minHeight: "80vh",
                 position: "relative",
                 color: "white",
-                overflow: "hidden", // Added overflow option here
+                overflow: "visible", // Added overflow option here
             }}
         >
             <div className="position-relative">
@@ -48,13 +46,13 @@ const ClosingBanner = () => {
 
                     {/* Card Content */}
                     <div className="mt-5">
-                        <h2
-                            className="fs-4  mb-2"
+                        <p
+                            className="fw-bold fs-4  mb-2"
                             style={{ color: "#907ab6", lineHeight: "1.5" }}
                         >
                             El empaque es más que papel. Más que tinta.<br />
                             Es tu historia, tu huella, tu esencia.
-                        </h2>
+                        </p>
                     </div>
                 </div>
                 <div
@@ -64,6 +62,8 @@ const ClosingBanner = () => {
                     ¡Gracias por confiar en mi marca!
                 </div>
             </div>
+
+            
         </section>
     )
 }
