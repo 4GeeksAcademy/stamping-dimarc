@@ -19,6 +19,7 @@ import AntesDeComprar from "./pages/AntesDeComprar.jsx";
 import DespuesDeComprar from "./pages/DespuesDeComprar.jsx";
 import EntregasyEnvios from "./pages/EntregasyEnvios.jsx";
 import Contacto from "./pages/Contacto.jsx";
+import { CreateProduct } from "./pages/CreateProduct";
 
 
 export const router = createBrowserRouter(
@@ -48,6 +49,7 @@ export const router = createBrowserRouter(
       <Route path="despuesdecomprar" element={<DespuesDeComprar />} />
       <Route path="entregasyenvios" element={<EntregasyEnvios />} />
       <Route path="contacto" element={ <Contacto />} />
+      <Route path="/crear-producto" element={<CreateProduct />} />
       </Route>
     )
 );

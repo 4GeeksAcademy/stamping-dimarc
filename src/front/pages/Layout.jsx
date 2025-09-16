@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom/dist"
 import ScrollToTop from "../components/ScrollToTop"
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer"
+import GiftQuoteBubble from "../components/GiftQuoteBubble";
 
 
 // Base component that maintains the navbar and footer throughout the page and the scroll to top functionality.
@@ -11,7 +12,7 @@ export const Layout = () => {
             <Navbar />
             <main>
             <Outlet />
-           
+           <GiftQuoteBubble side="left" />
             <div className="wa-widget">
             <a href="https://api.whatsapp.com/send?phone=50762971297"
                 target="_blank"

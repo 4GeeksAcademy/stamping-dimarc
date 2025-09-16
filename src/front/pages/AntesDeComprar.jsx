@@ -122,19 +122,19 @@ export default function AntesDeComprar() {
           </Col>
         </Row>
 
-        <h3 className="mt-5 mb-3" style={{ color: "#756197" }}>Ejemplos por tamaño</h3>
+        <h1 className="mt-5 mb-5" style={{color: "#756197"  }}>Ejemplos por tamaño</h1>
 
         <Row className="g-4">
           <Col md={6}>
             <Card className="h-100 shadow-sm text-center p-3">
               <Card.Img
-                src=""
+                src="https://res.cloudinary.com/dakvux10n/image/upload/v1757710329/1_prplpq.png"
                 alt="Bolsa grande 30 × 26 cm"
-                style={{ height: 360, objectFit: "cover" }}
+                style={{ height: 800, objectFit: "cover" }}
               />
               <Card.Body>
-                <Card.Title style={{ color: "#756197" }}>Bolsa grande 30 × 26 cm</Card.Title>
-                <Card.Text className="small" style={{ color: "#756197" }}>
+                <Card.Title style={{ fontFamily: "'Pacifico', cursive", fontSize: "2rem", color: "#756197" }}>Bolsa grande 30 × 26 cm</Card.Title>
+                <Card.Text style={{ color: "#756197", fontSize: "1.4rem" }}>
                   Sello recomendado 10×10 cm como logo principal.
                 </Card.Text>
               </Card.Body>
@@ -144,13 +144,13 @@ export default function AntesDeComprar() {
           <Col md={6}>
             <Card className="h-100 shadow-sm text-center p-3">
               <Card.Img
-                src=""
+                src="https://res.cloudinary.com/dakvux10n/image/upload/v1757710329/2_knlpng.png"
                 alt="Bolsa mediana 25 × 16 cm"
-                style={{ height: 360, objectFit: "cover" }}
+                style={{ height: 800, objectFit: "cover" }}
               />
               <Card.Body>
-                <Card.Title style={{ color: "#756197" }}>Bolsa mediana 25 × 16 cm</Card.Title>
-                <Card.Text className="small" style={{ color: "#756197" }}>
+                <Card.Title style={{ fontFamily: "'Pacifico', cursive", fontSize: "2rem", color: "#756197" }}>Bolsa mediana 25 × 16 cm</Card.Title>
+                <Card.Text style={{ color: "#756197", fontSize: "1.4rem" }}>
                   Sello recomendado 6×5 cm como logo principal.
                 </Card.Text>
               </Card.Body>
@@ -162,13 +162,13 @@ export default function AntesDeComprar() {
           <Col md={6}>
             <Card className="h-100 shadow-sm text-center p-3">
               <Card.Img
-                src=""
+                src="https://res.cloudinary.com/dakvux10n/image/upload/v1757710330/3_jnfrv2.png"
                 alt="Bolsa pequeña 15 × 12 cm"
-                style={{ height: 360, objectFit: "cover" }}
+                style={{ height: 800, objectFit: "cover" }}
               />
               <Card.Body>
-                <Card.Title style={{ color: "#756197" }}>Bolsa pequeña 15 × 12 cm</Card.Title>
-                <Card.Text className="small" style={{ color: "#756197" }}>
+                <Card.Title style={{ fontFamily: "'Pacifico', cursive", fontSize: "2rem", color: "#756197" }}>Bolsa pequeña 15 × 12 cm</Card.Title>
+                <Card.Text style={{ color: "#756197", fontSize: "1.4rem" }}>
                   Sello recomendado 3×4 cm o 2×6 cm para datos/agradecimiento.
                 </Card.Text>
               </Card.Body>
@@ -178,13 +178,13 @@ export default function AntesDeComprar() {
           <Col md={6}>
             <Card className="h-100 shadow-sm text-center p-3">
               <Card.Img
-                src=""
+                src="https://res.cloudinary.com/dakvux10n/image/upload/v1757710330/4_ed3ezq.png"
                 alt="Mini decorativos 2.5 × 2.5 cm"
-                style={{ height: 360, objectFit: "cover" }}
+                style={{ height: 800, objectFit: "cover" }}
               />
               <Card.Body>
-                <Card.Title style={{ color: "#756197" }}>Mini decorativos</Card.Title>
-                <Card.Text className="small" style={{ color: "#756197" }}>
+                <Card.Title style={{ fontFamily: "'Pacifico', cursive", fontSize: "2rem", color: "#756197" }}>Mini decorativos</Card.Title>
+                <Card.Text style={{ color: "#756197", fontSize: "1.4rem" }}>
                   Sellos de 2.5×2.5 cm para íconos sencillos y patrones.
                 </Card.Text>
               </Card.Body>

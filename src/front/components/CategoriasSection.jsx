@@ -25,6 +25,16 @@ export default function CategoriasSection() {
   return (
     <section className="py-4">
       <Container>
+
+         {/* Encabezado de sección */}
+        <h2 className="text-start mb-2" style={{ fontFamily: "'Pacifico', cursive", color: "#756197" }}>
+          Categorías
+        </h2>
+        <h6 className="text-start mb-4" style={{ color: "#907ab6" }}>
+          Todo lo que tenemos para ti
+        </h6>
+
+          {/* Grid de categorías */}  
         <Row className="g-5 justify-content-center text-center">
           {items.map((it) => (
             <Col key={it.label} xs={6} md={4} lg={2}>

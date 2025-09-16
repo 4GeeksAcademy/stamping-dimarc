@@ -125,7 +125,7 @@ export default function Emprendedores() {
           <div className="col-12 col-md-6 col-lg-4 col-xl-3">
             <Link to="/producto/sello-gracias" style={{ textDecoration: "none", color: "inherit" }}>
               <Card className="h-100">
-                <Card.Img variant="top" src="" alt="Sello Gracias por tu compra" style={{ height: "320px", objectFit: "cover" }} />
+                <Card.Img variant="top" src="https://res.cloudinary.com/dakvux10n/image/upload/v1757728511/20231219_125826_nngftq.jpg" alt="Sello Gracias por tu compra" style={{ height: "320px", objectFit: "cover" }} />
                 <Card.Body className="d-flex flex-column text-center" style={{ minHeight: "220px" }}>
                   <Card.Title style={{ fontFamily: "'Pacifico', cursive", color: "#756197" }}>
                     Sello Gracias por tu compra
@@ -145,7 +145,7 @@ export default function Emprendedores() {
           <div className="col-12 col-md-6 col-lg-4 col-xl-3">
             <Link to="/producto/sello-hecho-a-mano" style={{ textDecoration: "none", color: "inherit" }}>
               <Card className="h-100">
-                <Card.Img variant="top" src="" alt="Sello Hecho a mano" style={{ height: "320px", objectFit: "cover" }} />
+                <Card.Img variant="top" src="https://res.cloudinary.com/dakvux10n/image/upload/v1757728706/20230918_072726_omrisf.jpg" alt="Sello Hecho a mano" style={{ height: "320px", objectFit: "cover" }} />
                 <Card.Body className="d-flex flex-column text-center" style={{ minHeight: "220px" }}>
                   <Card.Title style={{ fontFamily: "'Pacifico', cursive", color: "#756197" }}>
                     Sello Hecho a mano
@@ -165,7 +165,7 @@ export default function Emprendedores() {
           <div className="col-12 col-md-6 col-lg-4 col-xl-3">
             <Link to="/producto/pack-agradecimientos" style={{ textDecoration: "none", color: "inherit" }}>
               <Card className="h-100">
-                <Card.Img variant="top" src="" alt="Pack mini agradecimientos" style={{ height: "320px", objectFit: "cover" }} />
+                <Card.Img variant="top" src="https://res.cloudinary.com/dakvux10n/image/upload/v1757728519/20250110_123240_aauplq.jpg" alt="Pack mini agradecimientos" style={{ height: "320px", objectFit: "cover" }} />
                 <Card.Body className="d-flex flex-column text-center" style={{ minHeight: "220px" }}>
                   <Card.Title style={{ fontFamily: "'Pacifico', cursive", color: "#756197" }}>
                     Pack mini agradecimientos
@@ -184,7 +184,7 @@ export default function Emprendedores() {
           <div className="col-12 col-md-6 col-lg-4 col-xl-3">
             <Link to="/producto/pack-agradecimientos" style={{ textDecoration: "none", color: "inherit" }}>
               <Card className="h-100">
-                <Card.Img variant="top" src="" alt="Pack mini agradecimientos" style={{ height: "320px", objectFit: "cover" }} />
+                <Card.Img variant="top" src="https://res.cloudinary.com/dakvux10n/image/upload/v1757728705/20240529_163632_icicb5.jpg" alt="Pack mini agradecimientos" style={{ height: "320px", objectFit: "cover" }} />
                 <Card.Body className="d-flex flex-column text-center" style={{ minHeight: "220px" }}>
                   <Card.Title style={{ fontFamily: "'Pacifico', cursive", color: "#756197" }}>
                     Pack mini agradecimientos

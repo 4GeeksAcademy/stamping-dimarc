@@ -49,7 +49,7 @@ const ClosingBanner = () => {
                     {/* Card Content */}
                     <div className="mt-5">
                         <h2
-                            className="fs-4 fw-bold mb-2"
+                            className="fs-4  mb-2"
                             style={{ color: "#907ab6", lineHeight: "1.5" }}
                         >
                             El empaque es más que papel. Más que tinta.<br />
