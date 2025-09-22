@@ -5,6 +5,5 @@ set -o errexit
 npm install
 npm run build
 
-pipenv install
-
-pipenv run upgrade
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
